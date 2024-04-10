@@ -1,9 +1,50 @@
-<p style="font-family:'Courier New'"> This is the Emmy Hughes working website. </p> <br>
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navigation Bar</title>
+<style>
+/* Style for the navigation bar */
+.navbar {
+  background-color: #ADD8E6; /* Baby blue background */
+  font-family: 'Courier New', Courier, monospace; /* Courier New font */
+  overflow: hidden;
+}
 
-<p style="font-family:'Courier New'"> <a href="research.md">My Research</a>
+/* Style for the links within the navigation bar */
+.navbar a {
+  float: left;
+  display: block;
+  color: black; /* Black lettering */
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
 
-<p style="font-family:'Courier New'"> <a href="about.md">About</a>
+/* Style for the hover effect on links */
+.navbar a:hover {
+  background-color: #87CEFA; /* Light blue hover effect */
+}
 
-<p style="font-family:'Courier New'"> <a href="cv.md">CV</a>
+/* Clear floats */
+.navbar::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
 
-<p style="font-family:'Courier New'"> <a href="random.md">Random</a>
+<!-- Navigation bar -->
+<div class="navbar">
+  <a href="research.md">Research</a>
+  <a href="about.md">About</a>
+  <a href="#cv.md">CV</a>
+  <a href="#random.md">Random</a>
+</div>
+
+</body>
+</html>
